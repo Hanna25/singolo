@@ -1,0 +1,82 @@
+body{
+  margin: 0px;
+  max-width: 1200px;
+}
+
+.haeder-wrapper{
+  height: 104px;
+  background-color:  #2d303a;
+  box-shadow: 0px 8px 0px #323746;
+  margin: 0;
+}
+.navigation-bar{
+  display: flex;
+  padding: 17px 0px 0px 29px;
+  
+}
+.logo h1{
+  text-transform: uppercase;
+  font-family: 'Lato', sans-serif;
+  color: white;
+  font-size: 29px;
+  margin: 17px;
+  cursor: pointer;
+}
+.navigation-menu{
+  padding: 0px 6px 17px 474px;
+  cursor: pointer;
+}
+
+.navigation-menu ul{
+  display: flex;
+  
+}
+.navigation-menu li{
+  text-transform: uppercase;
+  color: white;
+  font-family: 'Lato', sans-serif;
+  padding: 17px 31px 0px 0;
+  font-size: 14px;
+}
+.active-buttom-home {
+  color: #f06c64;
+  text-decoration: none;
+}
+.buttom-servies, .buttom-portfolio, .buttom-about {
+  margin: 0 0 0 4px;
+}
+.buttom-contact{
+  margin: 0 0 0 3px;
+}
+.main-wrapper {
+  background: #f06c64;
+}
+.media-elements{
+  height: 54px;
+  width: 54px;
+  position: absolute;
+  top: 50%;
+  left: 3%;
+}
+.slider-left::before{
+  content: "";
+  position: absolute;
+  width: 22px;
+  height: 6px;
+  top: 10px;
+  right: 18px;
+  background-color: #c94549;
+  transform: rotate(-45deg);
+  border-radius: 47px;
+}
+.slider-left::after{
+  content: "";
+  position: absolute;
+  width: 22px;
+  height: 6px;
+  top: 23px;
+  right: 18px;
+  background-color: #c94549;
+  transform: rotate(45deg);
+  border-radius: 47px;
+}
