@@ -8,10 +8,11 @@ body{
   background-color:  #2d303a;
   box-shadow: 0px 8px 0px #323746;
   margin: 0;
+  padding-bottom: 8px;
 }
 .navigation-bar{
   display: flex;
-  padding: 17px 0px 0px 29px;
+  padding: 16px 0px 0px 29px;
   
 }
 .logo h1{
@@ -29,7 +30,6 @@ body{
 
 .navigation-menu ul{
   display: flex;
-  
 }
 .navigation-menu li{
   text-transform: uppercase;
@@ -38,6 +38,7 @@ body{
   padding: 17px 31px 0px 0;
   font-size: 14px;
 }
+
 .active-buttom-home {
   color: #f06c64;
   text-decoration: none;
@@ -48,35 +49,191 @@ body{
 .buttom-contact{
   margin: 0 0 0 3px;
 }
-.main-wrapper {
+.main-wrapper_media-elements {
   background: #f06c64;
+  height: 698px;
+  box-shadow: 0px 8px 0px #ea676b;
+  margin-bottom: 8px;
+  position: relative;
 }
-.media-elements{
-  height: 54px;
-  width: 54px;
+.media-elements-left{
   position: absolute;
-  top: 50%;
-  left: 3%;
+  top: 46.5%;
+  left: 6.5%;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
 }
 .slider-left::before{
   content: "";
   position: absolute;
-  width: 22px;
-  height: 6px;
-  top: 10px;
-  right: 18px;
+  width: 24px;
+  height: 7px;
+  top: 11px;
+  right: 20px;
   background-color: #c94549;
-  transform: rotate(-45deg);
+  transform: rotate(-46deg);
   border-radius: 47px;
 }
 .slider-left::after{
   content: "";
   position: absolute;
-  width: 22px;
+  width: 24px;
   height: 6px;
-  top: 23px;
-  right: 18px;
+  top: 26.5px;
+  right: 20px;
   background-color: #c94549;
   transform: rotate(45deg);
   border-radius: 47px;
+}
+
+.media-elements-rigth{
+  position: absolute;
+  top: 46.5%;
+  left: 95.4%;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+.slider-rigth::before{
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 6px;
+  top: 11px;
+  right: 3px;
+  background-color: #c94549;
+  transform: rotate(45deg);
+  border-radius: 47px;
+}
+.slider-rigth::after{
+  content: "";
+  position: absolute;
+  width: 23px;
+  height: 6px;
+  top: 25px;
+  right: 3px;
+  background-color: #c94549;
+  transform: rotate(-45deg);
+  border-radius: 47px;
+}
+.iphone-box{
+  display: flex;
+}
+.phone-horizontal{
+  position: absolute;
+  top: 202px;
+  left: 498px;
+}
+.phone-horizontal img{
+  width: 542px;
+  height: 256px;
+  box-shadow: 29px 29px 0px #ce5d56;
+  border-radius: 30px;
+}
+.phone-vertical{
+  position: absolute;
+  top: 61px;
+  left: 132px;
+}
+.phone-vertical img{
+  width: 253px;
+  height: 543px;
+  box-shadow: 29px 27px 0px #ce5d56;
+  border-radius: 30px;
+}
+.main-wrapper_text-elements{
+  background-color: #f2f2f2;
+  height: 591px;
+}
+.heading{
+  padding: 69px 0px 0px 47px;
+}
+.heading h2 {
+  margin: 0px;
+  color: #666d89;
+  font-family: 'Lato', sans-serif;
+  font-size: 35px;
+  font-weight: 900;
+  word-spacing: 4.1px;
+}
+.heading-text{
+  padding: 23px 0px 52px 46px;
+}
+.heading-text p {
+  color: #949ab3;
+  font-family: 'Lato', sans-serif;
+  font-size: 21px;
+  line-height: 1.6;
+  margin: 0;
+}
+.heading-text_p{
+  word-spacing: -1.2px;
+  padding: 2px 0px 0px 0px;
+
+}
+.position-container {
+  padding: 0px 0px 0 47px;
+}
+.picture img{
+  width: 71px;
+  height: 71px;
+  padding: 3px 23px 0px 0;
+  
+}
+.firs-line_position-container, .second-line_position-container{
+  display: flex;
+}
+.custom-dising, .inovation-ideas, .answer, .responsive-layout, .support, .star{
+  display: flex;
+}
+.inovation-ideas{
+  padding: 1px 0px 0px 5px;
+}
+.answer{
+  padding: 1px 21px 0px 0;
+}
+.second-line_position-container {
+  padding-top: 33px;
+}
+.support {
+  padding: 0px 0px 0px 51px;
+}
+.star {
+  padding: 0 85px 0 0px;
+}
+.pen-icon {
+  padding: 1px 0 0px 1px;
+}
+.lightbulb-icon {
+  padding: 0px 0 0 1px;
+}
+.heart-icon {
+  padding: 0px 0 0 1px;
+}
+.phone-icon {
+  padding: 3px 0px 0 1px;
+}
+.bubble-icon {
+  padding: 2px 0 0 1px;
+}
+.star-icon {
+  padding: 3px 3px 0 0px;
+}
+.text h3{
+  color: #626986;
+  font-family: 'Lato', sans-serif;
+  font-size: 21px;
+  font-weight: 900;
+  margin: 0;
+}
+.text p{
+  color: #8c92ad;
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+  font-size: 14px;
+  padding: 10px 0 0 0;
+  line-height: 25px;
+  word-spacing: 2px;
+  font-weight: 800;
 }
