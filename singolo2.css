@@ -15,7 +15,7 @@ body {
   margin: 18px 0px 0px -1px;
 }
 .logo-text {
-  padding: 4px 0 0 0;
+  padding: 6px 0 0 0;
 }
 
 .logo-text p {
@@ -24,24 +24,35 @@ body {
   font-size: 17px;
   letter-spacing: 0.2px;
 }
+.wrapper-button{
+  margin: -2px -2px 2px 1px;
+}
+
 .wrapper-picture {
-  padding: 18px 0 0 0;
+  padding: 17px 0 0 0;
+  
 }
 .creative-pictures {
   width: 220px;
   height: 187px;
-  padding: 0 16px 16px 0;
+  padding: 0 16px 16px 0;  
 }
-.button-all, .button-webds, .button-craphicds, .button-artwork {
+
+.button-webds, .button-craphicds, .button-artwork {
   height: 22px;
   background: none;
   border-radius: 4px;
   border: 1px solid #666d89;
+  cursor: pointer;
 }
 .button-all {
   width: 28px;
-  color: white;
   margin: 0 7px 0 0;
+  height: 22px;
+  background: none;
+  border-radius: 4px;
+  border: 1px solid white;
+  cursor: pointer;
 }
 .button-webds {
   width: 78px;
@@ -59,6 +70,9 @@ body {
   font-family: 'Lato', sans-serif;
   font-size: 11px;
   margin: 0px 0px 2px 0;
+}
+.button-all p {
+  color: white;
 }
 .wrapper_main {
   background: #f2f2f2;
@@ -79,12 +93,16 @@ body {
 .heading-text_p {
   margin: -8px 0 0 0;
 }
-.wrapper-portfolio, .wrapper_button-social-networks {
+.wrapper-portfolio {
   display: flex;
   padding: 47px 0 0px 0px;
 }
 .wrapper_button-social-networks{
-  display: flex;
+   display: flex;
+   padding: 34px 0 0px 2px;
+}
+.first-portfolio {
+  padding: 1px 4px 0 2px;
 }
 .first-portfolio h2, .second-portfolio h2, .third-portfolio h2 {
   color: #666d89;
@@ -96,22 +114,26 @@ body {
   color: #666d89;
   font-family: 'Lato', sans-serif;
   font-size: 12px;
-  margin: 0
+  margin: 11px 0 0 0px;
 }
 .button-social-networks {
   background: none;
   border-radius: 50%;
   border: 1px solid #666d89;
-  width: 30px;
-  height: 30px;
+  width: 31px;
+  height: 31px;
+  margin: 0px 9px 0 0;
+  cursor: pointer;
 }
-.first-portfolio img {
+.photo_first-portfolio {
   padding: 1px 0px 0 0;
 }
 .second-portfolio {
-  padding: 0px 0 0px 10px;
+  padding: 2px 16px 0px 8px;
 }
-.third-portfolio img {
-  margin: -1px 0px 0px -7px;
+
+.third-portfolio {
+  padding: 2px 27px 0 0px;
 }
+
 
