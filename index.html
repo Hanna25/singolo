@@ -5,21 +5,22 @@
   <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans&display=swap" rel="stylesheet">
+  
 </head>
 <body>
   <haeder>
-    <div class="haeder-wrapper">
+    <div id="home" class="haeder-wrapper">
       <nav class="navigation-bar">
         <div class="logo">
           <h1>singolo*</h1>
         </div>
         <div class="navigation-menu">
           <ul>
-            <li><a class="active-buttom-home">home</a></li>
-            <li><a class="buttom-servies">services</a></li>
-            <li><a class="buttom-portfolio">portfolio</a></li>
-            <li><a class="buttom-about">about</a></li>
-            <li><a class="buttom-contact">contact</a></li>
+            <li><a class="active-buttom-home menu-button active" href="#home">home</a></li>
+            <li><a class="buttom-servies menu-button" href="#services">services</a></li>
+            <li><a class="buttom-portfolio menu-button" href="#portfolio">portfolio</a></li>
+            <li><a class="buttom-about menu-button" href="#about">about</a></li>
+            <li><a class="buttom-contact menu-button" href="#contact">contact</a></li>
           </ul>
         </div>
       </nav>
@@ -28,26 +29,32 @@
   <main>
     <!--SINGOLO1-->
     <div class="main-wrapper_media-elements">
-      <button class="media-elements-left">
+      <button id="button-left" class="media-elements-left">
         <div class="icon-slider-left">
           <div class="slider-left"></div>
         </div>
       </button>
-      <div class="iphone-box">
+      <div class="iphone-box--active">
         <div class="phone-vertical">
           <img src="./assets/phone-vertical .png">
+          <img src="./assets/phone-vertical-black.png" class="hide-phone">
         </div>
         <div class="phone-horizontal">
           <img src="assets/phone-horizontal.png">
+          <img src="./assets/phone-horizontal-black.png" class="hide-phone">
         </div>
       </div>
-      <button class="media-elements-rigth">
+      <div class="iphone-box">
+        <img src="./assets/Slide-2.png">
+        <img src="./assets/phone-vertical-black.png" class="hide-phone">
+      </div>
+      <button id="button-right" class="media-elements-rigth">
         <div class="icon-slider-rigth">
           <div class="slider-rigth"></div>
         </div>
       </button>
     </div>
-    <div class="main-wrapper_text-elements">
+    <div id="services" class="main-wrapper_text-elements">
       <div class="logo_text-elements">
         <h2>Our Services</h2>
       </div>
@@ -118,7 +125,7 @@
       </div>
     </div>
     <!--SINGOLO2-->
-    <div class="wrapper-header">
+    <div id="portfolio" class="wrapper-header">
       <div class="logo-portfolio">
         <h1>Portfolio</h1>
       </div>
@@ -126,7 +133,7 @@
         <p>Duis mollist, est non commodo luctus, nisi erat pottitor ligula, eget lacinia odio sem nec elit.</p>
       </div>
       <div class="wrapper-button">
-        <button class="button-all"><p>All</p></button>
+        <button class="button-all active-tab"><p>All</p></button>
         <button class="button-webds"><p>Web Design</p></button>
         <button class="button-craphicds"><p>Craphic Design</p></button>
         <button class="button-artwork"><p>Artwork</p></button>
@@ -146,7 +153,7 @@
         <img src="./assets/pic12.png" class="creative-pictures pic12">
       </div>
     </div>
-    <div class="wrapper_main">
+    <div id="about" class="wrapper_main">
       <div class="logo_about-us">
         <h2>About Us</h2>
       </div>
@@ -190,7 +197,7 @@
       </div>
     </div>
     <!--SINGOLO3-->
-    <div class="wrapper-contacts">
+    <div id="contact" class="wrapper-contacts">
       <div class="logo_contacts">
         <h2>Get a Quote</h2>
       </div>
@@ -245,5 +252,6 @@
     </div>
   </div>
 </footer>
+<script src="script.js"></script>
 </body>
 </html>

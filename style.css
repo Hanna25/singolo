@@ -15,6 +15,9 @@ body{
   padding: 8px 0px 0px 29px;
   
 }
+.navigation-menu .active {
+  color: #f06c64;
+}
 .logo h1{
   text-transform: uppercase;
   font-family: 'Lato', sans-serif;
@@ -51,11 +54,9 @@ body{
   color: white;
   font-size: 11px;
   margin-left: 7px;
+  text-decoration: none;
 }
 
-li a.active-buttom-home {
-  color: #f06c64;
-}
 .buttom-servies, .buttom-portfolio, .buttom-about {
   margin: 0 0 0 4px;
 }
@@ -132,7 +133,13 @@ li a.active-buttom-home {
 }
 .iphone-box{
   display: flex;
+  display: none;
+
 }
+.hide-phone{
+  display: none;
+}
+
 .phone-horizontal{
   position: absolute;
   top: 172px;
@@ -302,8 +309,8 @@ li a.active-buttom-home {
   height: 22px;
   background: none;
   border-radius: 4px;
-  border: 1px solid white;
   cursor: pointer;
+  border: 1px solid #666d89;
 }
 .button-webds {
   width: 78px;
@@ -322,8 +329,8 @@ li a.active-buttom-home {
   font-size: 11px;
   margin: 0px 0px 2px 0;
 }
-.button-all p {
-  color: white;
+.active-tab {
+  border: 1px solid white;
 }
 .wrapper_main {
   background: #f2f2f2;
