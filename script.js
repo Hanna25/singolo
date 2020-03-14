@@ -4,6 +4,9 @@ let buttonSliderLeft = document.getElementById("button-left")
 let phoneVertical = document.getElementsByClassName("phone-vertical")
 let phoneHorizontal = document.getElementsByClassName("phone-horizontal")
 let buttonPortfolioBlock = document.getElementsByClassName("wrapper-button")[0]
+let paretnCriativePictures = document.getElementsByClassName("wrapper-picture")[0]
+
+
 
 for(let i = 0; i < buttonsNavigationMenu.length; i++){
   buttonsNavigationMenu[i].addEventListener("click", function(event){
@@ -56,6 +59,9 @@ function switchPhonePicture(event) {
 phoneVertical[0].addEventListener("click", switchPhonePicture)
 phoneHorizontal[0].addEventListener("click", switchPhonePicture)
 
+function movePicture() {
+  paretnCriativePictures.appendChild(paretnCriativePictures.children[0])
+}
 
 buttonPortfolioBlock.addEventListener("click", function(event){ 
    
@@ -65,9 +71,11 @@ buttonPortfolioBlock.addEventListener("click", function(event){
   } 
    if(event.target.tagName === "BUTTON"){
     event.target.classList.add("active-tab")
+    movePicture()
   } else if(event.target.tagName === "P"){
     let button = event.target.closest("button")
     button.classList.add("active-tab")
+    movePicture()
   }
   // document.getElementsByClassName("active-tab")[0].classList.remove("active-tab")
  
