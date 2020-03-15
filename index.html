@@ -39,14 +39,14 @@
           <img src="./assets/phone-vertical .png">
           <img src="./assets/phone-vertical-black.png" class="hide-phone">
         </div>
-        <div class="phone-horizontal">
+        <div class="phone-horizontal ">
           <img src="assets/phone-horizontal.png">
           <img src="./assets/phone-horizontal-black.png" class="hide-phone">
         </div>
       </div>
       <div class="iphone-box">
-        <img src="./assets/Slide-2.png">
-        <img src="./assets/phone-vertical-black.png" class="hide-phone">
+        <img src="./assets/Slide-2.png" class="iphone-slide">
+        
       </div>
       <button id="button-right" class="media-elements-rigth">
         <div class="icon-slider-rigth">
@@ -207,12 +207,20 @@
       <div class="feedback-block-wrapper">
         <div class="input-block">    
           <form action="./singolo3.php" method="get" target="_self">        
-            <input type="text" name="Name" placeholder="Name (Required)" class="input-block__contact" required><br>            
-            <input type="email" name="Email" placeholder="Email (Required)" class="input-block__contact" required><br>            
-            <input type="text" name="Subject" placeholder="Subject" class="input-block__contact" required><br>            
-            <textarea placeholder="Describe your project in detail..." required></textarea><br>
-            <button> Submit </button>
+            <input  type="text" name="Name" placeholder="Name (Required)" class="input-block__contact" required><br>            
+            <input  type="email" name="Email" placeholder="Email (Required)" class="input-block__contact" required><br>            
+            <input id="subject" type="text" name="Subject" placeholder="Subject" class="input-block__contact" required><br>            
+            <textarea id="description" placeholder="Describe your project in detail..." required></textarea><br>
+            <button id="submit"> Submit </button>
           </form>
+        </div>
+        <div id="massage-form" class ="hidden">
+          <div class="massage">
+            <p>Email sent</p>
+            <p>Subject: <span id="result-subject"></span></p>
+            <p>Description: <span id="result-description"></span></p>
+            <button id="closed-button">OK</button>
+          </div>
         </div>
         <div class="contact-inform-wrapper">
           <div class="logo-contact-inform">

@@ -5,7 +5,8 @@ let phoneVertical = document.getElementsByClassName("phone-vertical")
 let phoneHorizontal = document.getElementsByClassName("phone-horizontal")
 let buttonPortfolioBlock = document.getElementsByClassName("wrapper-button")[0]
 let paretnCriativePictures = document.getElementsByClassName("wrapper-picture")[0]
-
+let buttonSubmit = document.getElementById("submit")
+let closedButtom = document.getElementById("closed-button")
 
 
 for(let i = 0; i < buttonsNavigationMenu.length; i++){
@@ -76,8 +77,29 @@ buttonPortfolioBlock.addEventListener("click", function(event){
     let button = event.target.closest("button")
     button.classList.add("active-tab")
     movePicture()
-  }
-  // document.getElementsByClassName("active-tab")[0].classList.remove("active-tab")
- 
+  } 
 });  
 
+paretnCriativePictures.addEventListener("click", function(event) {
+  let activeChild = paretnCriativePictures.getElementsByClassName("active-tile")[0]
+  
+  if (activeChild){
+    activeChild.classList.remove("active-tile")
+    event.target.classList.add("active-tile")
+  } else {
+    event.target.classList.add("active-tile")    
+  }
+});
+
+buttonSubmit.addEventListener("click", function(){
+  let subject = document.getElementById("subject").value.toString();
+  let description = document.getElementById("description").value;
+  document.getElementById("result-subject").innerText = subject;
+  document.getElementById("result-description").innerText = description;
+  document.getElementById("massage-form").classList.remove("hidden")
+});
+closedButtom.addEventListener("click", function(){
+  document.getElementById("result-subject").innerText = "";
+  document.getElementById("result-description").innerText = "";
+  document.getElementById("massage-form").classList.add("hidden");
+});
