@@ -109,6 +109,8 @@ closedButtom.addEventListener("click", function(){
   document.getElementById("result-subject").innerText = "";
   document.getElementById("result-description").innerText = "";
   document.getElementById("massage-form").classList.add("hidden");
+  document.getElementById("subject").value = "";
+  document.getElementById("description").value = "";
 });
 
 
