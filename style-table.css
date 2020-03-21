@@ -1,0 +1,80 @@
+@media(max-width: 768px){
+  body{
+    margin: 0 auto;
+    max-width: 768px;
+  }
+  .logo h1 {
+    font-size: 23px;
+    margin: 22px 0px 0px 13px;    
+  }
+  .navigation-menu {
+    padding: 0px 6px 17px 162px;
+   }
+  .navigation-menu li {
+    padding: 15px 23px 0px 0;
+  }
+  .navigation-menu li a {
+    font-size: 12px;    
+  }
+  .main-wrapper_media-elements {
+    height: 443px;
+  }
+  .phone-vertical {
+    top: 41px;
+    left: 83px;
+  }
+  .phone-vertical img {
+    width: 165px;
+    height: 344px;
+    box-shadow: 25px 24px 0px #ce5d56, 22px 22px 0px #ce5d56, 12px 12px 0px #ce5d56, 6px 6px 0px #ce5d56;
+    border-radius: 30px;
+  }
+  .phone-horizontal {
+    position: absolute;
+    top: 132px;
+    left: 319px;
+  }
+  .phone-horizontal img {
+    width: 346px;
+    height: 163px;
+    box-shadow: 25px 24px 0px #ce5d56, 22px 22px 0px #ce5d56, 12px 12px 0px #ce5d56, 6px 6px 0px #ce5d56;
+    border-radius: 30px;
+  }
+  .logo_text-elements {
+    padding: 40px 0px 0px 41px;
+  }
+  .iphone-slide {
+    width: 786px;
+    height: 456px;
+  }
+  .logo_text-elements-text {
+    padding: 19px 28px 12px 40px;
+  }
+  .position-container {
+    padding: 1px 0px 0 6px;
+  }
+  .custom-dising, .inovation-ideas, .answer, .responsive-layout, .support, .star {
+    width: 285px;
+    margin: 25px 34px;
+   }
+   .main-wrapper_text-elements {
+      height: 675px;
+  }
+  .logo-portfolio h1 {
+    margin: 18px 0px 0px 10px;
+  }
+  .logo-text {
+    padding: 2px 37px 6px 9px;
+  }
+  .logo-text p {
+    font-size: 19px;
+    letter-spacing: 0.1px;   
+  }
+  .wrapper-portfolio{
+    padding: 28px 0 0px 0px;
+  }
+  .photo_first-portfolio, .photo_second-portfolio, .photo_third-portfolio{
+    width: 220px;
+    height: 219px;
+  }
+}

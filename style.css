@@ -1,4 +1,8 @@
 /*SINGOLO1*/
+html {
+  scroll-behavior: smooth;
+}
+
 body{
   margin: 0 auto;
   max-width: 1020px;
@@ -9,6 +13,10 @@ body{
   background-color:  #2d303a;
   box-shadow: 0px 8px 0px #323746;
   margin: 0 0 8px 0;
+  position: fixed;
+  top: 0;
+  width: 1020px;
+  z-index: 100;
 }
 .navigation-bar{
   display: flex;
@@ -69,6 +77,7 @@ body{
   box-shadow: 0px 8px 0px #ea676b;
   margin-bottom: 8px;
   position: relative;
+  margin-top: 95px;
 }
 .media-elements-left{
   position: absolute;
@@ -202,7 +211,7 @@ body{
   word-spacing: 1.1px;
 }
 .logo_text-elements-text{
-  padding: 19px 0px 43px 40px;
+  padding: 19px 0px 30px 40px;
 }
 .logo_text-elements-text p {
   color: #949ab3;
@@ -217,7 +226,7 @@ body{
 
 }
 .position-container {
-  padding: 0px 0px 0 41px;
+  padding: 0px 0px 0 21px;
 }
 .picture img {
   width: 61px;
@@ -225,26 +234,17 @@ body{
   padding: 3px 21px 0px 0;
   
 }
-.firs-line_position-container, .second-line_position-container{
+.wrapper_position-container{
   display: flex;
+  flex-wrap: wrap;
 }
 .custom-dising, .inovation-ideas, .answer, .responsive-layout, .support, .star{
   display: flex;
+  width: 282px;
+  margin: 13px 18px;
 }
 .inovation-ideas{
   padding: 1px 0px 0px 2px;
-}
-.answer{
-  padding: 1px 17px 0px 0;
-}
-.second-line_position-container {
-  padding-top: 27px;
-}
-.support {
-  padding: 0px 0px 0px 39px;
-}
-.star {
-  padding: 0 71px 0 0px;
 }
 .pen-icon {
   padding: 1px 0 0px 0px;
@@ -280,6 +280,7 @@ body{
   line-height: 22px;
   word-spacing: 2px;
   font-weight: 800;
+  text-align: justify;
 }
 
 /*SINGOLO 2*/
@@ -653,3 +654,5 @@ footer{
   font-family: 'Lato', sans-serif;
   box-shadow: 0px 0px 7px 0px #ce5d56;
 }
+
+

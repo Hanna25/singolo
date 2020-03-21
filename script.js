@@ -94,12 +94,40 @@ paretnCriativePictures.addEventListener("click", function(event) {
 buttonSubmit.addEventListener("click", function(){
   let subject = document.getElementById("subject").value.toString();
   let description = document.getElementById("description").value;
+  if(subject.trim() === "") {
+    subject = "no subject"
+  }
+  if(description.trim() === "") {
+    description = "no description"
+  }  
   document.getElementById("result-subject").innerText = subject;
   document.getElementById("result-description").innerText = description;
   document.getElementById("massage-form").classList.remove("hidden")
 });
+
 closedButtom.addEventListener("click", function(){
   document.getElementById("result-subject").innerText = "";
   document.getElementById("result-description").innerText = "";
   document.getElementById("massage-form").classList.add("hidden");
 });
+
+
+
+function onScrollNavMenu(event) {
+  let positionCursor = window.scrollY;
+  let section = document.querySelectorAll("main  > div");
+  let links = document.querySelectorAll(".navigation-menu a");
+  
+  
+  section.forEach((element) => {
+    if(element.offsetTop <= positionCursor && (element.offsetTop + element.offsetHeight) > positionCursor){
+      links.forEach((a) => {
+        a.classList.remove('active')
+        if(element.getAttribute('id') === a.getAttribute('href').substring(1)) {
+          a.classList.add('active')
+        }
+      })
+    }
+  }) 
+}
+document.addEventListener("scroll", onScrollNavMenu)
