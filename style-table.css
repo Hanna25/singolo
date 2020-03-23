@@ -3,6 +3,12 @@
     margin: 0 auto;
     max-width: 768px;
   }
+  .main-wrapper_media-elements{
+    margin-top: 0px;
+  }
+  .haeder-wrapper{
+    width: 768px;
+  }
   .logo h1 {
     font-size: 23px;
     margin: 22px 0px 0px 13px;    
@@ -71,10 +77,63 @@
     letter-spacing: 0.1px;   
   }
   .wrapper-portfolio{
-    padding: 28px 0 0px 0px;
+    padding: 42px 22px 0px 0px;
   }
   .photo_first-portfolio, .photo_second-portfolio, .photo_third-portfolio{
-    width: 220px;
-    height: 219px;
+    width: 219px;
+    height: 218px;
+  }
+  .creative-pictures {
+    width: 216px;
+    height: 184px;
+  }
+  .second-portfolio {
+    padding: 2px 16px 0px 10px;
+  }
+  .first-portfolio h2, .second-portfolio h2, .third-portfolio h2 {
+    margin: 6px 0px 0px 0px;
+  }
+  .first-portfolio p, .second-portfolio p, .third-portfolio p{
+    margin: 5px 0 0 0px;
+    text-align: justify;
+  }
+  .wrapper_button-social-networks{
+    padding: 28px 0px 0px 1px;
+  }
+  .input-block {
+    padding: 32px 0 0 0;
+  }
+  .input-block__contact {
+    width: 441px;
+    height: 37px;
+    margin: 0px 0 12px -2px;
+  }
+  textarea {
+    width: 438px;
+    height: 154px;
+    margin-left: -2px;
+  }
+  .contact-inform-wrapper {
+    padding: 11px 0px 0px 29px;
+  }
+  .logo-contact-inform h3 {
+    margin: 20px 0 2px 0;
+  }
+  .text-contact-inform {
+    width: 230px;
+  }
+  .adress-wrapper {
+    padding: 34px 0 0 0;
+  }
+  .wrapper-contacts{
+    padding: 58px 0 38px 41px;
+  }
+  .input-block button{
+    width: 133px;
+    height: 38px;
+    margin: 13px 0 0 0;
+  }
+  .footer-wrapper_button-social-networks {
+     padding: 3px 38px 0 0;
   }
 }
