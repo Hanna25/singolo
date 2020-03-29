@@ -2,8 +2,8 @@
 <html>
 <head>
   <link type="text/css" rel="stylesheet" href="style.css">
-  <link type="text/css" rel="stylesheet" href="style-table.css">
-  <link type="text/css" rel="stylesheet" href="style-phone.css">
+  <link type="text/css" rel="stylesheet" href="./styles/style-table.css">
+  <link type="text/css" rel="stylesheet" href="./styles/style-phone.css">
   <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans&display=swap" rel="stylesheet">
@@ -11,13 +11,23 @@
   
 </head>
 <body>
-  <haeder>
+  <header>
     <div class="haeder-wrapper">
       <nav class="navigation-bar">
         <div class="logo">
-          <h1>singolo*</h1>
+          <h1>singolo</h1>
+          <span>*</span>
         </div>
+        <input type="checkbox" id="hmt" class="hidden-menu-ticker">
+        <label class="btn-menu" for="hmt">
+          <span class="first"></span>
+          <span class="second"></span>
+          <span class="third"></span>
+        </label>
         <div class="navigation-menu">
+          <div class="logo-window">
+            <h1>singolo</h1>
+          </div>
           <ul>
             <li><a class="active-buttom-home menu-button active" href="#home">home</a></li>
             <li><a class="buttom-servies menu-button" href="#services">services</a></li>
@@ -28,7 +38,7 @@
         </div>
       </nav>
     </div>
-  </haeder>
+  </header>
   <main>
     <!--SINGOLO1-->
     <div id="home" class="main-wrapper_media-elements">

@@ -7,15 +7,13 @@
     margin-top: 0px;
   }
   .haeder-wrapper{
-    width: 768px;
+    max-width: 768px;
   }
   .logo h1 {
     font-size: 23px;
     margin: 22px 0px 0px 13px;    
   }
-  .navigation-menu {
-    padding: 0px 6px 17px 162px;
-   }
+ 
   .navigation-menu li {
     padding: 15px 23px 0px 0;
   }
@@ -23,35 +21,43 @@
     font-size: 12px;    
   }
   .main-wrapper_media-elements {
-    height: 443px;
+    height: 539px;
+  }
+  .media-elements-left{
+    top: 56%;
+    left: 7%;
   }
   .phone-vertical {
-    top: 41px;
+    top: 135px;
     left: 83px;
   }
   .phone-vertical img {
-    width: 165px;
-    height: 344px;
-    box-shadow: 25px 24px 0px #ce5d56, 22px 22px 0px #ce5d56, 12px 12px 0px #ce5d56, 6px 6px 0px #ce5d56;
-    border-radius: 30px;
+    width: 163px;
+    height: 346px;
+    box-shadow: 19px 20px 0px #ce5d56, 18px 13px 0px #ce5d56, 12px 7px 0px #ce5d56, 6px 6px 0px #ce5d56;
+    border-radius: 21px;
   }
   .phone-horizontal {
-    position: absolute;
-    top: 132px;
+    top: 226px;
     left: 319px;
   }
   .phone-horizontal img {
-    width: 346px;
-    height: 163px;
-    box-shadow: 25px 24px 0px #ce5d56, 22px 22px 0px #ce5d56, 12px 12px 0px #ce5d56, 6px 6px 0px #ce5d56;
-    border-radius: 30px;
+    width: 345px;
+    height: 165px;
+    box-shadow: 16px 19px 0px #ce5d56, 19px 18px 0px #ce5d56, 12px 12px 0px #ce5d56, 6px 6px 0px #ce5d56;
+    border-radius: 21px;
+  }
+  .media-elements-rigth {
+    top: 56%;
+    left: 95.5%;
   }
   .logo_text-elements {
     padding: 40px 0px 0px 41px;
   }
   .iphone-slide {
     width: 786px;
-    height: 456px;
+    height: 457px;
+    margin: 95px 0 0 0;
   }
   .logo_text-elements-text {
     padding: 19px 28px 12px 40px;
@@ -63,9 +69,7 @@
     width: 285px;
     margin: 25px 34px;
    }
-   .main-wrapper_text-elements {
-      height: 675px;
-  }
+   
   .logo-portfolio h1 {
     margin: 18px 0px 0px 10px;
   }
@@ -101,15 +105,14 @@
     padding: 28px 0px 0px 1px;
   }
   .input-block {
-    padding: 32px 0 0 0;
-  }
-  .input-block__contact {
+    padding: 34px 0 0 0;
     width: 441px;
+  }
+  .input-block__contact {    
     height: 37px;
     margin: 0px 0 12px -2px;
   }
   textarea {
-    width: 438px;
     height: 154px;
     margin-left: -2px;
   }
@@ -120,13 +123,13 @@
     margin: 20px 0 2px 0;
   }
   .text-contact-inform {
-    width: 230px;
+    max-width: 230px;
   }
   .adress-wrapper {
     padding: 34px 0 0 0;
   }
   .wrapper-contacts{
-    padding: 58px 0 38px 41px;
+    padding: 55px 0 38px 41px;
   }
   .input-block button{
     width: 133px;
@@ -135,5 +138,8 @@
   }
   .footer-wrapper_button-social-networks {
      padding: 3px 38px 0 0;
+  }
+  .main-wrapper_text-elements {
+    padding-bottom: 44px;
   }
 }
